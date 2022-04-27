@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
+//s
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="32dp"
         android:layout_height="6dp"
