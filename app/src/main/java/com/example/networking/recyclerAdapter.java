@@ -1,5 +1,6 @@
 package com.example.networking;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,7 +18,7 @@ public class recyclerAdapter extends RecyclerView.Adapter<recyclerAdapter.MyView
         this.mountainList = mountainList;
     }
     public class MyViewHolder extends RecyclerView.ViewHolder{
-        private TextView mountainText;
+        public TextView mountainText;
 
 
         public MyViewHolder(final View view) {
@@ -35,6 +36,7 @@ public class recyclerAdapter extends RecyclerView.Adapter<recyclerAdapter.MyView
     @Override
     public void onBindViewHolder(@NonNull recyclerAdapter.MyViewHolder holder, int position) {
         String name = mountainList.get(position).getMountainName();
+        Log.d("anus", name);
         holder.mountainText.setText(name);
     }
 
