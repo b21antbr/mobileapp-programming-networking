@@ -1,17 +1,38 @@
 package com.example.networking;
 
 public class Mountain {
-    String mountainName;
+    String name;
+    String location;
+    int size;
 
-    public Mountain(String mountainName) {
-        this.mountainName = mountainName;
+    public Mountain(String name, String location, int size) {
+        this.name = name;
+        this.location = location;
+        this.size = size;
     }
 
-    public String getMountainName() {
-        return mountainName;
+    public int getSize() {
+        return size;
     }
 
-    public void setMountainName(String mountainName) {
-        this.mountainName = mountainName;
+    public void setSize(int size) {
+        this.size = size;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String mountainName) {
+        this.name = mountainName;
     }
 }

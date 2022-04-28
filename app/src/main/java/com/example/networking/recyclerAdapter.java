@@ -35,13 +35,19 @@ public class recyclerAdapter extends RecyclerView.Adapter<recyclerAdapter.MyView
 
     @Override
     public void onBindViewHolder(@NonNull recyclerAdapter.MyViewHolder holder, int position) {
-        String name = mountainList.get(position).getMountainName();
-        Log.d("anus", name);
-        holder.mountainText.setText(name);
+        String name = mountainList.get(position).getName();
+        String location = mountainList.get(position).getLocation();
+        int size = mountainList.get(position).getSize();
+        holder.mountainText.setText("Name: " + name + "\nLocation: " + location + "\nSize: " + size);
     }
 
     @Override
     public int getItemCount() {
         return mountainList.size();
+    }
+
+    public void addMountains(ArrayList<Mountain> mountainList){
+        this.mountainList.addAll(mountainList);
+        notifyDataSetChanged();
     }
 }
