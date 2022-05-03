@@ -1,7 +1,7 @@
 
 # Rapport
 
-Ett program som visar information utifrån hämtad data från en webbplats.
+Ett program som visar information utifrån hämtad data från en webplats.
 I activity har en recyclerview lagts till, följt av en ny xml fil vid namn list_items där textviewen ligger.
 Sedan har en recycler adapter tillagts för att kunna hantera information. Där vi har en ArrayList för objekten Mountain.
 Där existerar en bind på följande sätt:
@@ -28,7 +28,7 @@ public void onPostExecute(String json) {
     }
 ```
 
-Programmet ser du åt på detta sätt:
+Programmet ser då ut på detta sätt:
 
 
 ![](Screenshot.png)
